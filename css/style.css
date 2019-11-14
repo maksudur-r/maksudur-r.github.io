@@ -1,0 +1,973 @@
+/* 
+------------------
+Template Name: Buzz
+Author: Maksudur R
+Author Email: rahmanmaksudur16@gmail.com
+Version: 1.00
+----------------
+
+----------------
+Table of Content
+----------------
+1.Preloader Starts
+2.Navbar Starts
+3.Banner Starts
+4.About Starts
+5.Service Starts
+6.Portfolio Starts
+7.Feedback Starts
+8.Contact Starts
+9.Footer Starts
+*/
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+/***************************
+  Common Typography Starts
+****************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: #222;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+}
+
+/***************************
+  Common Typography Ends
+****************************/
+/***************************
+  Preloader Starts
+****************************/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+}
+
+/***************************
+  Preloader Ends
+****************************/
+/******************
+   Navbar Starts
+*******************/
+.navbar {
+    background: #1F2336;
+    background: #1F2336;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999999999999999999999999999999999;
+}
+
+.navbar a {
+    color: #daa520;
+    font-family: "Sacramento", cursive;
+    font-size: 32px;
+}
+
+.navbar ul .active a {
+    color: #daa520;
+}
+
+.navbar ul li {
+    margin-left: 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    position: relative;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+}
+
+.navbar ul li a:hover {
+    color: #daa520;
+}
+
+.navbar ul li a:hover:before {
+    width: 35px;
+}
+
+.navbar ul li a:before {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    background: #daa520;
+    width: 0;
+    height: 1px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+}
+
+/******************
+   Navbar Starts
+*******************/
+/*****************
+   Banner Starts
+******************/
+#banner {
+    background: url(../img/bannerImg.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    padding: 300px 0;
+}
+
+#banner #typed {
+    font-family: "Raleway", sans-serif;
+    font-size: 44px;
+    color: #fff;
+}
+
+#banner #typed strong {
+    font-family: "Raleway", sans-serif;
+    font-size: 44px;
+    color: #daa520;
+}
+
+#banner .bannerInfo h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+}
+
+#banner .bannerInfo p {
+    width: 50%;
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#banner .bannerInfo .cv {
+    background: #daa520;
+    border-radius: 10px;
+    color: #1F2336;
+    padding: 10px 15px;
+    margin-right: 20px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+}
+
+#banner .bannerInfo .cv:hover {
+    background: #1F2336;
+    color: #daa520;
+}
+
+#banner .bannerInfo .hire {
+    background: #daa520;
+    border-radius: 10px;
+    color: #1F2336;
+    padding: 10px 15px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+}
+
+#banner .bannerInfo .hire:hover {
+    background: #1F2336;
+    color: #daa520;
+}
+
+#banner .toAbout {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: jump 1s infinite;
+}
+
+#banner .toAbout i {
+    color: #fff;
+    font-size: 24px;
+}
+
+#banner .toTop a i {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    line-height: 30px;
+    border: 1px solid #daa520;
+    background: #daa520;
+    color: #1F2336;
+    text-align: center;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 85px;
+    }
+
+    50% {
+        bottom: 80px;
+    }
+
+    100% {
+        bottom: 85px;
+    }
+}
+
+/*****************
+   Banner Starts
+******************/
+/******************
+  About Starts
+*******************/
+#about {
+    background: #1F2336;
+    padding: 100px 0;
+}
+
+#about h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: inherit;
+}
+
+#about .aboutImg {
+    margin-top: 60px;
+    position: relative;
+}
+
+#about .aboutImg .aboutMe {
+    width: 92%;
+    padding: 5px 0;
+    background: #daa520;
+    position: absolute;
+    bottom: -10px;
+    left: 29px;
+    transition: 1s all linear;
+    -webkit-transition: 1s all linear;
+    -moz-transition: 1s all linear;
+    -o-transition: 1s all linear;
+}
+
+#about .aboutImg .aboutMe h5 {
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    color: #1F2336;
+    font-weight: 700;
+}
+
+#about .aboutImg .aboutMe p {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    color: #1F2336;
+    font-weight: 400;
+}
+
+#about .aboutImg .aboutMe:hover {
+    background: rgba(218, 165, 32, 0.6);
+    bottom: 42px;
+    border-bottom: 5px solid #1F2336;
+}
+
+#about .aboutImg .aboutMe:hover .aboutMeInner {
+    bottom: -140px;
+    opacity: 1;
+}
+
+#about .aboutImg .aboutMe .aboutMeInner {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    background: rgba(218, 165, 32, 0.6);
+    z-index: 99999;
+    opacity: 0;
+    transition: 1s all linear;
+    -webkit-transition: 1s all linear;
+    -moz-transition: 1s all linear;
+    -o-transition: 1s all linear;
+}
+
+#about .allInfo {
+    margin-left: 94px;
+}
+
+#about .allInfo .aboutDetails {
+    margin-top: 146px;
+}
+
+#about .allInfo .aboutDetails h5 {
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    color: #daa520;
+    font-weight: 700;
+}
+
+#about .allInfo .aboutDetails p {
+    margin-top: 30px;
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#about .allInfo .moreDetails ul {
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+#about .allInfo .moreDetails ul li {
+    margin-top: 10px;
+}
+
+#about .allInfo .moreDetails ul li a {
+    font-family: secondaryFont;
+    font-size: 16px;
+    font-weight: 700;
+    color: #daa520;
+}
+
+#about .allInfo .moreDetails ul li a span {
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#about .allInfo .socialMedia {
+    margin-top: 10px;
+}
+
+#about .allInfo .socialMedia i {
+    color: #fff;
+    margin-right: 20px;
+    border: 1px solid #fff;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+}
+
+#about .allInfo .socialMedia i:hover {
+    background: #daa520;
+    border: 1px solid transparent;
+    color: #1F2336;
+}
+
+#about .allInfo .socialMedia i:nth-child(1) {
+    margin-left: 20px;
+}
+
+/******************
+  About Ends
+*******************/
+/*****************
+ Service Starts
+******************/
+#service {
+    background: #1F2336;
+    padding: 100px 0;
+}
+
+#service .serviceTitle h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: inherit;
+}
+
+#service .serviceTitle p {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+    border-bottom: 2px solid #daa520;
+    display: inline-block;
+}
+
+#service .bg1 {
+    background: url(../img/webDesign.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#service .bg2 {
+    background: url(../img/webDev.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#service .bg3 {
+    background: url(../img/bugFix.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#service .bg4 {
+    background: url(../img/creativeDesign.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#service .bg5 {
+    background: url(../img/wordPress.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#service .bg6 {
+    background: url(../img/support.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#service .webDesign {
+    margin-top: 60px;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    position: relative;
+}
+
+#service .webDesign:hover:before {
+    opacity: .9;
+}
+
+#service .webDesign h5 {
+    background: #000;
+    color: #fff;
+    padding: 5px;
+}
+
+#service .webDesign .back {
+    margin-top: 120px;
+    border-radius: 4px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+}
+
+#service .webDesign:hover .back {
+    opacity: 0;
+}
+
+#service .webDesign:hover .webDEsignDetails {
+    transform: scale(1);
+}
+
+#service .webDesign:before {
+    content: "";
+    position: absolute;
+    background: #daa520;
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: 0.2;
+    transition: 1s all linear;
+    -webkit-transition: 1s all linear;
+    -moz-transition: 1s all linear;
+    -o-transition: 1s all linear;
+}
+
+#service .webDesign .webDEsignDetails {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    height: 100%;
+    background: rgba(31, 35, 54, 0.6);
+    transform: scale(0);
+    z-index: 9999;
+    transition: 0.5s all linear;
+    -webkit-transition: 0.5s all linear;
+    -moz-transition: 0.5s all linear;
+    -o-transition: 0.5s all linear;
+}
+
+#service .webDesign .webDEsignDetails:hover i {
+    color: #daa520;
+}
+
+#service .webDesign .webDEsignDetails i {
+    padding-bottom: 15px;
+    font-size: 26px;
+    color: #fff;
+    transition: 0.5s all linear;
+    -webkit-transition: 0.5s all linear;
+    -moz-transition: 0.5s all linear;
+    -o-transition: 0.5s all linear;
+}
+
+#service .webDesign .webDEsignDetails h5 {
+    padding-bottom: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#service .webDesign .webDEsignDetails p {
+    font-family: "Roboto Slab", serif;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+}
+
+/*****************
+ Service Ends
+******************/
+/*******************
+ Portfolio Starts
+********************/
+#portfolio {
+    background: #1F2336;
+    padding: 100px 0;
+}
+
+#portfolio .portfolioTitle h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: inherit;
+}
+
+#portfolio .portfolioTitle p {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+    border-bottom: 2px solid #daa520;
+    display: inline-block;
+}
+
+#portfolio .portfolioTitle ul {
+    margin-top: 60px;
+}
+
+#portfolio .portfolioTitle ul li {
+    display: inline-block;
+    color: #daa520;
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#portfolio .mix {
+    position: relative;
+}
+
+#portfolio .mix:hover .overlay {
+    opacity: 1;
+    transform: scale(0.8);
+}
+
+#portfolio .mix .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(1);
+    opacity: 0;
+    transition: 0.5s all linear;
+    -webkit-transition: 0.5s all linear;
+    -moz-transition: 0.5s all linear;
+    -o-transition: 0.5s all linear;
+}
+
+#portfolio .mix .overlay i {
+    color: #1F2336;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+}
+
+#portfolio .mix .overlay i:hover {
+    color: #daa520;
+}
+
+#portfolio .hireMe {
+    text-align: center;
+    margin-top: 60px;
+    background: url(../img/hireME.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    position: relative;
+}
+
+#portfolio .hireMe .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(31, 35, 54, 0.3);
+}
+
+#portfolio .hireMe .overlay h3 {
+    font-family: "Roboto Slab", serif;
+    color: #fff;
+    margin-top: 135px;
+    font-size: 32px;
+}
+
+#portfolio .hireMe .overlay a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #daa520;
+    border-radius: 10px;
+    color: #1F2336;
+    padding: 10px 20px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#portfolio .hireMe .overlay a:hover {
+    background: #1F2336;
+    color: #daa520;
+}
+
+/*******************
+ Portfolio Ends
+********************/
+/*******************
+ Feedback Starts
+********************/
+#feedback {
+    background: #1F2336;
+    padding: 100px 0;
+}
+
+#feedback .feedbackTitle h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: inherit;
+}
+
+#feedback .feedbackTitle p {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+    border-bottom: 2px solid #daa520;
+    display: inline-block;
+}
+
+#feedback .feedbackBg {
+    margin-top: 60px;
+    background: url(../img/testimonialBg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 50px 0;
+}
+
+#feedback .feedbackBg .review {
+    background: rgba(31, 35, 54, 0.3);
+    outline: 0;
+    padding: 25px 0;
+}
+
+#feedback .feedbackBg .review img {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+#feedback .feedbackBg .review h3 {
+    margin-top: 15px;
+    font-family: "Sacramento", cursive;
+    color: #daa520;
+    font-size: 40px;
+}
+
+#feedback .feedbackBg .review p {
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    padding: 0 210px;
+}
+
+#feedback .feedbackBg .review i {
+    font-size: 14px;
+    color: #daa520;
+}
+
+#feedback .feedbackBg .prev {
+    position: absolute;
+    top: 0;
+    right: 42px;
+    color: #daa520;
+    border: 1px solid #1F2336;
+    padding: 5px;
+    z-index: 99999999;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+}
+
+#feedback .feedbackBg .prev:hover {
+    background: #daa520;
+    color: #1F2336;
+    border: none;
+}
+
+#feedback .feedbackBg .next {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #daa520;
+    border: 1px solid #1F2336;
+    padding: 5px;
+    z-index: 99999999;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+}
+
+#feedback .feedbackBg .next:hover {
+    background: #daa520;
+    color: #1F2336;
+    border: none;
+}
+
+/*******************
+ Feedback Starts
+********************/
+/*****************
+  Contact Starts
+******************/
+#contact {
+    background: #1F2336;
+    padding: 100px 0 60px 0;
+}
+
+#contact .contactTitle h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: inherit;
+}
+
+#contact .contactTitle p {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+    border-bottom: 2px solid #daa520;
+    display: inline-block;
+}
+
+#contact .contactForm {
+    margin-top: 60px;
+}
+
+#contact .contactForm input {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #daa520;
+    outline: 0;
+    padding-left: 10px;
+}
+
+#contact .contactForm input:focus {
+    color: #daa520;
+}
+
+#contact .contactForm input::placeholder {
+    color: #daa520;
+    font-family: "Roboto Slab", serif;
+    opacity: 1;
+}
+
+#contact .contactMessage {
+    margin-top: 30px;
+}
+
+#contact .contactMessage textarea {
+    background: none;
+    border: 1px solid #daa520;
+    color: #daa520;
+    font-family: "Roboto Slab", serif;
+    outline-color: #daa520;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+#contact .contactMessage textarea:focus {
+    color: #daa520;
+}
+
+#contact .contactMessage a {
+    background: #daa520;
+    border-radius: 10px;
+    color: #1F2336;
+    padding: 10px 20px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+#contact .contactMessage a:hover {
+    background: #fff;
+}
+
+#contact .socialMedia {
+    margin-top: 30px;
+}
+
+#contact .socialMedia i {
+    color: #fff;
+    margin-right: 20px;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+}
+
+#contact .socialMedia i:hover {
+    background: #daa520;
+    border: 1px solid transparent;
+    color: #1F2336;
+}
+
+#contact .socialMedia i:nth-child(1) {
+    margin-left: 20px;
+}
+
+/*****************
+  Contact Ends
+******************/
+/****************
+ Footer Starts
+*****************/
+#footer {
+    background: #222;
+    padding: 10px 0 !important;
+}
+
+#footer p {
+    font-family: "Raleway", sans-serif;
+    color: #daa520;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/****************
+ Footer Ends
+*****************/
+
+/*# sourceMappingURL=style.css.map */
